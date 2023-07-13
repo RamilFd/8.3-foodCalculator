@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Калкулятор</title>
+	<link rel="stylesheet" href="./style.css">
+	<link rel="shortcut icon" href="./16.png" type="image/x-icon">
+</head>
+
+<body>
+	<div id="parent">
+		<h2 id="parent-h2">Калькулятор продуктов</h2>
+		<p>Внесите в поля ниже название продуктов, их вес в 'кг' и цену за '1кг'. Нажмите на кнопку 'добавить'.
+			Проделайте это несколько раз, чтобы заполнить корзину разными продуктами. А в таблице, ниже
+			на странице, отобразится вся информация об итоговой цене и заказанных вами продуктах.</p>
+			<br>
+		<p>Корзину можно редактировать. Для этого достаточно двойным щелчком указать в необходимое поле, внести
+			изменения
+			и нажать на 'Enter'. Если какой-то продукт из корзины вам не нужен - вы можете его удалить.</p>
+		<div id="form">
+			<input id="name" placeholder="название">
+			<input id="price" placeholder="цена">
+			<input id="amount" placeholder="количество">
+			<input id="add" type="button" value="добавить">
+		</div>
+
+		<h2 id="table-h2">Таблица продуктов:</h2>
+		<table id="table">
+			<tr>
+				<th>Название</th>
+				<th>Цена</th>
+				<th>Кол-во</th>
+				<th>Сумма</th>
+				<th>Удалить</th>
+			</tr>
+		</table>
+		<div id="result">
+			Общий итог: <span id="total">0</span>
+		</div>
+	</div>
+
+	<script src="./script.js"></script>
+</body>
+
+</html>
